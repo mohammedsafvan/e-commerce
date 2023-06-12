@@ -8,13 +8,16 @@ export default function Header() {
       <div className="container mx-auto p-6 flex justify-between">
         <Logo />
         <Link
-          href={"/cart"}
+          href={"/"}
           className="flex items-center space-x-1 text-gray-700 hover:text-gray-900"
         >
           <div className="relative ">
             <ShoppingCartIcon className="h-7 w-7 flex-shrink-0" />
           </div>
-          <p className="text-lg">$600</p>
+          <p className="text-lg">
+            $600 <span className="text-sm text-gray-500">(0)</span>
+          </p>
+          <p></p>
         </Link>
       </div>
     </header>
